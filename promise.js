@@ -7,13 +7,16 @@ let myPromise = new Promise ((resolve, reject) => {
 });
 
 console.log(1);
+
 myPromise.then(() => {
     console.log("Promise fulfilled.");
 },
 () => {
     console.log("Promised rejected.");
 });
+
 setTimeout(() => {
     console.log(2);
 }, 500);
+
 console.log(3);
